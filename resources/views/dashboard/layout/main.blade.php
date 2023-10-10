@@ -90,6 +90,35 @@
                 </div>
             </li>
 
+
+            <li class="nav-item">
+                <a class="nav-link {{ $active==="datamaster" ? 'active':'' }} collapsed " data-bs-toggle="collapse" href="#collapseExampledat" aria-labelledby="headingTwo" data-parent="#accordionSidebar" aria-controls="collapseExample">
+                <span data-feather="file"></span>
+                DATA MASTER
+                </a>
+                <div class="collapse" id="collapseExampledat">
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a href="/karyawan/pns"  class="nav-link"><p class="text-dark m-0">Jabatan</p></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/karyawan/p3k"  class="nav-link"><p class="text-dark m-0">Fungsional</p></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/karyawan/kontrak" class="nav-link "><p class="text-dark m-0">Golongan</p></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/karyawan/kontrak" class="nav-link "><p class="text-dark m-0">Unit Kerja</p></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/karyawan/kontrak" class="nav-link "><p class="text-dark m-0">Jenis Kelamin </p></a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+
             
             <li class="nav-item">
                 <a class="nav-link" href="#">
