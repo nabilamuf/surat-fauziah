@@ -6,6 +6,7 @@ use App\Models\Unit;
 use App\Models\Jabatan;
 use App\Models\Golongan;
 use App\Models\Kategori;
+use App\Models\Cuti;
 use App\Models\Fungsional;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -35,5 +36,13 @@ class Pegawai extends Model
     public function kategori()
     {
         return $this->belongsTo(Kategori::class);
+    }
+    public function cuti()
+    {
+        return $this->hasMany(Cuti::class);
+    }
+    public function surat()
+    {
+        return $this->hasMany(Surat::class);
     }
 }

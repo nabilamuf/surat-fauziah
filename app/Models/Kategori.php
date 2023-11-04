@@ -7,10 +7,12 @@ use App\Models\Pegawai;
 use App\Models\Golongan;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Kategori extends Model
 {
     use HasFactory;
+    use Sluggable;
     protected $guarded = ['id'];
 
     public function jabatan()
@@ -26,4 +28,13 @@ class Kategori extends Model
     {
         return $this->hasMany(Pegawai::class);
     }
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'nama'
+            ]
+        ];
+    }
+    
 }

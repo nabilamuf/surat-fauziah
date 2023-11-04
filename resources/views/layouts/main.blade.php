@@ -11,8 +11,12 @@
     {{--Boostrap Icon CSS  --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    {{-- datatables  --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
     {{-- my style --}}
     <link rel="stylesheet" href="css/style.css">
+    
 
 
     {{-- <title>SIMPEG Fauziah | {{ $title }}</title> --}}
@@ -30,6 +34,10 @@
 
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    {{-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="js\datatable.js"></script> --}}
 
     
   </body>

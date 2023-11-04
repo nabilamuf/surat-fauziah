@@ -8,7 +8,7 @@
         @if ($pegawais->count())
 
             <div class="container mt-3">
-                <h3 class="mb-3">Data Karyawan | {{ $title }}</h3>
+                <h3 class="mb-3">Data  {{ $title }}  | {{ $sub_title }}</h3>
                 <div class="row">
                   <table class="table table-bordered">
                     <thead>
@@ -25,16 +25,17 @@
                     <tbody>
                       <?php 
                         $no = 1
+                      
                         ?>
                       @foreach ($pegawais as $pegawai)
                       <tr>
                         <td>{{ $no++ }}</td>
                         <td>{{ $pegawai->nik }}</td>
                         <td>{{ $pegawai->nama }}</td>
-                        <td>{{ $pegawai->jabatan->nama }}</td>
+                        <td>{{ $pegawai->jabatan->nama ?? 'none'}}</td>
                         <td>{{ $pegawai->kategori->nama }}</td>
                         <td>
-                          <a href="/karyawan/pns/{{ $pegawai->nik }}" style="text-decoration: none" >Detail</a>
+                          <a href="/karyawan/pns/{{ $pegawai->id }}" style="text-decoration: none" >Detail</a>
                         </td>
                         {{-- <td>
                           <a href="/karyawan/p3k/{{ $pegawai->nik }}" style="text-decoration: none" >Buat</a>
